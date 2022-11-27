@@ -1,14 +1,9 @@
 <?php
 
 class Carro {
-    // Uma classe tem atributos ->
-
     public $modelo;
     public $cor;
     public $kilometragem = 0;
-
-    // e também o estado ->
-
     public $ligado = false;
     public $acelerando = false;
 

@@ -1,17 +1,13 @@
 <?php
 declare(strict_types = 1);
 require_once('Class/Carro.php');
+require_once('Class/MaquinaDeCostura.php');
 
-//instacia um objeto da classe Carro ->
-$carro1 = new Carro();
+//instacia um objeto da classe MaquinaDeCostura ->
+$mC1 = new MaquinaDeCostura('reta');
 
-//define os atributos do objeto criado a partir da Carro ->
-$carro1 -> modelo = "fiat";
-$carro1 -> cor = "preto";
+$mC1->setLigado(true);
+$mC1->setLinha('9701');
+echo($mC1->costurar());
 
-//teste dos metódos
-$carro1 -> acelerar(2);
-$carro1 -> desligarCarro();
-$carro1 -> ligarCarro();
-$carro1 -> acelerar(20);
-echo($carro1 -> mostrar());
+
